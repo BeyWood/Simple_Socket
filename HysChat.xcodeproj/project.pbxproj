@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50442D881D05732900C11323 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50442D871D05732900C11323 /* main.m */; };
+		50442D8B1D05732900C11323 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50442D8A1D05732900C11323 /* AppDelegate.m */; };
+		50442D8E1D05732900C11323 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50442D8D1D05732900C11323 /* ViewController.m */; };
+		50442D911D05732900C11323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50442D8F1D05732900C11323 /* Main.storyboard */; };
+		50442D931D05732900C11323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50442D921D05732900C11323 /* Assets.xcassets */; };
+		50442D961D05732900C11323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50442D941D05732900C11323 /* LaunchScreen.storyboard */; };
+		50442DA11D05732900C11323 /* HysChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50442DA01D05732900C11323 /* HysChatTests.m */; };
+		50442DAC1D05732900C11323 /* HysChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50442DAB1D05732900C11323 /* HysChatUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50442D9D1D05732900C11323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50442D7B1D05732800C11323 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50442D821D05732800C11323;
+			remoteInfo = HysChat;
+		};
+		50442DA81D05732900C11323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50442D7B1D05732800C11323 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50442D821D05732800C11323;
+			remoteInfo = HysChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50442D831D05732800C11323 /* HysChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HysChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50442D871D05732900C11323 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50442D891D05732900C11323 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		50442D8A1D05732900C11323 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		50442D8C1D05732900C11323 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		50442D8D1D05732900C11323 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		50442D901D05732900C11323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50442D921D05732900C11323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50442D951D05732900C11323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50442D971D05732900C11323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50442D9C1D05732900C11323 /* HysChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HysChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50442DA01D05732900C11323 /* HysChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HysChatTests.m; sourceTree = "<group>"; };
+		50442DA21D05732900C11323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50442DA71D05732900C11323 /* HysChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HysChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50442DAB1D05732900C11323 /* HysChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HysChatUITests.m; sourceTree = "<group>"; };
+		50442DAD1D05732900C11323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50442D801D05732800C11323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50442D991D05732900C11323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50442DA41D05732900C11323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50442D7A1D05732800C11323 = {
+			isa = PBXGroup;
+			children = (
+				50442D851D05732900C11323 /* HysChat */,
+				50442D9F1D05732900C11323 /* HysChatTests */,
+				50442DAA1D05732900C11323 /* HysChatUITests */,
+				50442D841D05732800C11323 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50442D841D05732800C11323 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50442D831D05732800C11323 /* HysChat.app */,
+				50442D9C1D05732900C11323 /* HysChatTests.xctest */,
+				50442DA71D05732900C11323 /* HysChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50442D851D05732900C11323 /* HysChat */ = {
+			isa = PBXGroup;
+			children = (
+				50442D891D05732900C11323 /* AppDelegate.h */,
+				50442D8A1D05732900C11323 /* AppDelegate.m */,
+				50442D8C1D05732900C11323 /* ViewController.h */,
+				50442D8D1D05732900C11323 /* ViewController.m */,
+				50442D8F1D05732900C11323 /* Main.storyboard */,
+				50442D921D05732900C11323 /* Assets.xcassets */,
+				50442D941D05732900C11323 /* LaunchScreen.storyboard */,
+				50442D971D05732900C11323 /* Info.plist */,
+				50442D861D05732900C11323 /* Supporting Files */,
+			);
+			path = HysChat;
+			sourceTree = "<group>";
+		};
+		50442D861D05732900C11323 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50442D871D05732900C11323 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50442D9F1D05732900C11323 /* HysChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				50442DA01D05732900C11323 /* HysChatTests.m */,
+				50442DA21D05732900C11323 /* Info.plist */,
+			);
+			path = HysChatTests;
+			sourceTree = "<group>";
+		};
+		50442DAA1D05732900C11323 /* HysChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50442DAB1D05732900C11323 /* HysChatUITests.m */,
+				50442DAD1D05732900C11323 /* Info.plist */,
+			);
+			path = HysChatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50442D821D05732800C11323 /* HysChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50442DB01D05732900C11323 /* Build configuration list for PBXNativeTarget "HysChat" */;
+			buildPhases = (
+				50442D7F1D05732800C11323 /* Sources */,
+				50442D801D05732800C11323 /* Frameworks */,
+				50442D811D05732800C11323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HysChat;
+			productName = HysChat;
+			productReference = 50442D831D05732800C11323 /* HysChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50442D9B1D05732900C11323 /* HysChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50442DB31D05732900C11323 /* Build configuration list for PBXNativeTarget "HysChatTests" */;
+			buildPhases = (
+				50442D981D05732900C11323 /* Sources */,
+				50442D991D05732900C11323 /* Frameworks */,
+				50442D9A1D05732900C11323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50442D9E1D05732900C11323 /* PBXTargetDependency */,
+			);
+			name = HysChatTests;
+			productName = HysChatTests;
+			productReference = 50442D9C1D05732900C11323 /* HysChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50442DA61D05732900C11323 /* HysChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50442DB61D05732900C11323 /* Build configuration list for PBXNativeTarget "HysChatUITests" */;
+			buildPhases = (
+				50442DA31D05732900C11323 /* Sources */,
+				50442DA41D05732900C11323 /* Frameworks */,
+				50442DA51D05732900C11323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50442DA91D05732900C11323 /* PBXTargetDependency */,
+			);
+			name = HysChatUITests;
+			productName = HysChatUITests;
+			productReference = 50442DA71D05732900C11323 /* HysChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50442D7B1D05732800C11323 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = JasonHuang;
+				TargetAttributes = {
+					50442D821D05732800C11323 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					50442D9B1D05732900C11323 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 50442D821D05732800C11323;
+					};
+					50442DA61D05732900C11323 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 50442D821D05732800C11323;
+					};
+				};
+			};
+			buildConfigurationList = 50442D7E1D05732800C11323 /* Build configuration list for PBXProject "HysChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50442D7A1D05732800C11323;
+			productRefGroup = 50442D841D05732800C11323 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50442D821D05732800C11323 /* HysChat */,
+				50442D9B1D05732900C11323 /* HysChatTests */,
+				50442DA61D05732900C11323 /* HysChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50442D811D05732800C11323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50442D961D05732900C11323 /* LaunchScreen.storyboard in Resources */,
+				50442D931D05732900C11323 /* Assets.xcassets in Resources */,
+				50442D911D05732900C11323 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50442D9A1D05732900C11323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50442DA51D05732900C11323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50442D7F1D05732800C11323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50442D8E1D05732900C11323 /* ViewController.m in Sources */,
+				50442D8B1D05732900C11323 /* AppDelegate.m in Sources */,
+				50442D881D05732900C11323 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50442D981D05732900C11323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50442DA11D05732900C11323 /* HysChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50442DA31D05732900C11323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50442DAC1D05732900C11323 /* HysChatUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50442D9E1D05732900C11323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50442D821D05732800C11323 /* HysChat */;
+			targetProxy = 50442D9D1D05732900C11323 /* PBXContainerItemProxy */;
+		};
+		50442DA91D05732900C11323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50442D821D05732800C11323 /* HysChat */;
+			targetProxy = 50442DA81D05732900C11323 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50442D8F1D05732900C11323 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50442D901D05732900C11323 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50442D941D05732900C11323 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50442D951D05732900C11323 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50442DAE1D05732900C11323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		50442DAF1D05732900C11323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50442DB11D05732900C11323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HysChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HJason.HysChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50442DB21D05732900C11323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HysChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HJason.HysChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		50442DB41D05732900C11323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HysChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HJason.HysChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HysChat.app/HysChat";
+			};
+			name = Debug;
+		};
+		50442DB51D05732900C11323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HysChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HJason.HysChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HysChat.app/HysChat";
+			};
+			name = Release;
+		};
+		50442DB71D05732900C11323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HysChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HJason.HysChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HysChat;
+			};
+			name = Debug;
+		};
+		50442DB81D05732900C11323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HysChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HJason.HysChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HysChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50442D7E1D05732800C11323 /* Build configuration list for PBXProject "HysChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50442DAE1D05732900C11323 /* Debug */,
+				50442DAF1D05732900C11323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50442DB01D05732900C11323 /* Build configuration list for PBXNativeTarget "HysChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50442DB11D05732900C11323 /* Debug */,
+				50442DB21D05732900C11323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50442DB31D05732900C11323 /* Build configuration list for PBXNativeTarget "HysChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50442DB41D05732900C11323 /* Debug */,
+				50442DB51D05732900C11323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50442DB61D05732900C11323 /* Build configuration list for PBXNativeTarget "HysChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50442DB71D05732900C11323 /* Debug */,
+				50442DB81D05732900C11323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50442D7B1D05732800C11323 /* Project object */;
+}
