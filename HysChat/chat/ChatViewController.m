@@ -51,15 +51,28 @@
     [self.view addSubview:disConnect];
     [self.tcpBtn addTarget:self action:@selector(tcpSocket:) forControlEvents:UIControlEventTouchUpInside];
     [self.udpBtn addTarget:self action:@selector(udpSocket:) forControlEvents:UIControlEventTouchUpInside];
+    [self.tcpServerBtn addTarget:self action:@selector(tcpServerBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.udpServerBtn addTarget:self action:@selector(udpServerBtnAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 -(void)tcpSocket:(UIButton*)sender{
-    UDPClientViewController *nextCtl = [[UDPClientViewController alloc] init];
+    TCPClientViewController *nextCtl = [[TCPClientViewController alloc] init];
     [self.navigationController pushViewController:nextCtl animated:YES];
 }
 
 -(void)udpSocket:(UIButton*)sender{
     UDPServerViewController *nextCtl = [[UDPServerViewController alloc] init];
+    [self.navigationController pushViewController:nextCtl animated:YES];
+}
+
+-(void)tcpServerBtnAction:(UIButton*)sender{
+    TCPServerViewController *nextCtl = [[TCPServerViewController alloc] init];
+    [self.navigationController pushViewController:nextCtl animated:YES];
+}
+
+-(void)udpServerBtnAction:(UIButton*)sender{
+    
+    UDPClientViewController *nextCtl = [[UDPClientViewController alloc] init];
     [self.navigationController pushViewController:nextCtl animated:YES];
 }
 

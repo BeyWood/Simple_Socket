@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"TCP SERVER";
     [self.view setBackgroundColor:RGBACOLOR(243, 243, 243, 1)];
     UIButton *openBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     openBtn.frame = CGRectMake(50, 100, 60, 35);

@@ -21,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"UDP SERVER";
     [self.view setBackgroundColor:RGBACOLOR(243, 243, 243, 243)];
     UIButton *openBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     openBtn.frame = CGRectMake(50, 100, 60, 35);

@@ -23,4 +23,9 @@
 
 @property (nonatomic,weak)IBOutlet UIButton *udpBtn;
 
+@property (nonatomic,weak)IBOutlet UIButton *tcpServerBtn;
+
+@property (nonatomic,weak)IBOutlet UIButton *udpServerBtn;
+
+
 @end
