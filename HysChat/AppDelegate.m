@@ -7,15 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "ChatViewController.h"
 
 @interface AppDelegate ()
 
+@property(nonatomic,strong)UINavigationController *nav;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    ChatViewController *rootCtl = [[ChatViewController alloc] init];
+    _nav = [[UINavigationController alloc] initWithRootViewController:rootCtl];
+    self.window.rootViewController = _nav;
     // Override point for customization after application launch.
     return YES;
 }

@@ -16,7 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture:)];
+    [self.view addGestureRecognizer:tapGesture];
+       // Do any additional setup after loading the view.
+}
+
+-(void)tapGesture:(UITapGestureRecognizer*)gesture{
+    [self.view endEditing:YES];
+}
+
+-(void)setRoundBtn:(UIButton*)button{
+    button.layer.cornerRadius = 6.0;
+    button.layer.masksToBounds = YES;
 }
 
 - (void)didReceiveMemoryWarning {

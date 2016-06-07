@@ -15,6 +15,19 @@
 		50442D961D05732900C11323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50442D941D05732900C11323 /* LaunchScreen.storyboard */; };
 		50442DA11D05732900C11323 /* HysChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50442DA01D05732900C11323 /* HysChatTests.m */; };
 		50442DAC1D05732900C11323 /* HysChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50442DAB1D05732900C11323 /* HysChatUITests.m */; };
+		50442DCD1D0575E100C11323 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 50442DC31D0575E100C11323 /* GCDAsyncSocket.m */; };
+		50442DCE1D0575E100C11323 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 50442DC51D0575E100C11323 /* GCDAsyncUdpSocket.m */; };
+		50442DCF1D0575E100C11323 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 50442DC81D0575E100C11323 /* AsyncSocket.m */; };
+		50442DD01D0575E100C11323 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 50442DCA1D0575E100C11323 /* AsyncUdpSocket.m */; };
+		50442DD11D0575E100C11323 /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 50442DCB1D0575E100C11323 /* Documentation.html */; };
+		50442DD61D05769200C11323 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50442DD51D05769200C11323 /* BaseViewController.m */; };
+		50442DE11D05826800C11323 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50442DDF1D05826800C11323 /* ChatViewController.m */; };
+		50442DE21D05826800C11323 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50442DE01D05826800C11323 /* ChatViewController.xib */; };
+		50442DE41D0699F800C11323 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50442DE31D0699F800C11323 /* CFNetwork.framework */; };
+		50442DEF1D06AC3B00C11323 /* UDPServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50442DEE1D06AC3B00C11323 /* UDPServerViewController.m */; };
+		50442DF21D06AC5100C11323 /* UDPClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50442DF11D06AC5100C11323 /* UDPClientViewController.m */; };
+		50442DF51D06AC6200C11323 /* TCPServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50442DF41D06AC6200C11323 /* TCPServerViewController.m */; };
+		50442DF81D06AC7300C11323 /* TCPClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50442DF71D06AC7300C11323 /* TCPClientViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +64,32 @@
 		50442DA71D05732900C11323 /* HysChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HysChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50442DAB1D05732900C11323 /* HysChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HysChatUITests.m; sourceTree = "<group>"; };
 		50442DAD1D05732900C11323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50442DBF1D0575E100C11323 /* CocoaAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaAsyncSocket.h; sourceTree = "<group>"; };
+		50442DC21D0575E100C11323 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		50442DC31D0575E100C11323 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		50442DC41D0575E100C11323 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		50442DC51D0575E100C11323 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		50442DC71D0575E100C11323 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		50442DC81D0575E100C11323 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		50442DC91D0575E100C11323 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		50442DCA1D0575E100C11323 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		50442DCB1D0575E100C11323 /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		50442DD41D05769200C11323 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		50442DD51D05769200C11323 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		50442DDA1D0578D800C11323 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = common.h; path = utils/common.h; sourceTree = "<group>"; };
+		50442DDB1D05794800C11323 /* HysChat.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HysChat.pch; sourceTree = "<group>"; };
+		50442DDE1D05826800C11323 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatViewController.h; path = chat/ChatViewController.h; sourceTree = "<group>"; };
+		50442DDF1D05826800C11323 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatViewController.m; path = chat/ChatViewController.m; sourceTree = "<group>"; };
+		50442DE01D05826800C11323 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChatViewController.xib; path = chat/ChatViewController.xib; sourceTree = "<group>"; };
+		50442DE31D0699F800C11323 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		50442DED1D06AC3B00C11323 /* UDPServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UDPServerViewController.h; path = chat/UDP/UDPServerViewController.h; sourceTree = "<group>"; };
+		50442DEE1D06AC3B00C11323 /* UDPServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UDPServerViewController.m; path = chat/UDP/UDPServerViewController.m; sourceTree = "<group>"; };
+		50442DF01D06AC5100C11323 /* UDPClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDPClientViewController.h; sourceTree = "<group>"; };
+		50442DF11D06AC5100C11323 /* UDPClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDPClientViewController.m; sourceTree = "<group>"; };
+		50442DF31D06AC6200C11323 /* TCPServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPServerViewController.h; sourceTree = "<group>"; };
+		50442DF41D06AC6200C11323 /* TCPServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPServerViewController.m; sourceTree = "<group>"; };
+		50442DF61D06AC7300C11323 /* TCPClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPClientViewController.h; sourceTree = "<group>"; };
+		50442DF71D06AC7300C11323 /* TCPClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPClientViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50442DE41D0699F800C11323 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,14 +141,12 @@
 		50442D851D05732900C11323 /* HysChat */ = {
 			isa = PBXGroup;
 			children = (
-				50442D891D05732900C11323 /* AppDelegate.h */,
-				50442D8A1D05732900C11323 /* AppDelegate.m */,
-				50442D8C1D05732900C11323 /* ViewController.h */,
-				50442D8D1D05732900C11323 /* ViewController.m */,
-				50442D8F1D05732900C11323 /* Main.storyboard */,
-				50442D921D05732900C11323 /* Assets.xcassets */,
-				50442D941D05732900C11323 /* LaunchScreen.storyboard */,
-				50442D971D05732900C11323 /* Info.plist */,
+				50442DD31D05765100C11323 /* utils */,
+				50442DD21D05764700C11323 /* base */,
+				50442DBC1D05741C00C11323 /* resources */,
+				50442DBB1D0573FD00C11323 /* frameworks */,
+				50442DBA1D0573B500C11323 /* chat */,
+				50442DB91D05734000C11323 /* main */,
 				50442D861D05732900C11323 /* Supporting Files */,
 			);
 			path = HysChat;
@@ -118,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				50442D871D05732900C11323 /* main.m */,
+				50442DDB1D05794800C11323 /* HysChat.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +177,113 @@
 				50442DAD1D05732900C11323 /* Info.plist */,
 			);
 			path = HysChatUITests;
+			sourceTree = "<group>";
+		};
+		50442DB91D05734000C11323 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				50442D941D05732900C11323 /* LaunchScreen.storyboard */,
+				50442D971D05732900C11323 /* Info.plist */,
+				50442D891D05732900C11323 /* AppDelegate.h */,
+				50442D8A1D05732900C11323 /* AppDelegate.m */,
+				50442D8C1D05732900C11323 /* ViewController.h */,
+				50442D8D1D05732900C11323 /* ViewController.m */,
+				50442D8F1D05732900C11323 /* Main.storyboard */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		50442DBA1D0573B500C11323 /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				50442DE61D06AB9C00C11323 /* UDP */,
+				50442DE51D06AB9400C11323 /* TCP */,
+				50442DDE1D05826800C11323 /* ChatViewController.h */,
+				50442DDF1D05826800C11323 /* ChatViewController.m */,
+				50442DE01D05826800C11323 /* ChatViewController.xib */,
+			);
+			name = chat;
+			sourceTree = "<group>";
+		};
+		50442DBB1D0573FD00C11323 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50442DE31D0699F800C11323 /* CFNetwork.framework */,
+				50442DBF1D0575E100C11323 /* CocoaAsyncSocket.h */,
+				50442DC01D0575E100C11323 /* GCD */,
+				50442DC61D0575E100C11323 /* RunLoop */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
+		50442DBC1D05741C00C11323 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				50442D921D05732900C11323 /* Assets.xcassets */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		50442DC01D0575E100C11323 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				50442DC21D0575E100C11323 /* GCDAsyncSocket.h */,
+				50442DC31D0575E100C11323 /* GCDAsyncSocket.m */,
+				50442DC41D0575E100C11323 /* GCDAsyncUdpSocket.h */,
+				50442DC51D0575E100C11323 /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		50442DC61D0575E100C11323 /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				50442DC71D0575E100C11323 /* AsyncSocket.h */,
+				50442DC81D0575E100C11323 /* AsyncSocket.m */,
+				50442DC91D0575E100C11323 /* AsyncUdpSocket.h */,
+				50442DCA1D0575E100C11323 /* AsyncUdpSocket.m */,
+				50442DCB1D0575E100C11323 /* Documentation.html */,
+			);
+			path = RunLoop;
+			sourceTree = "<group>";
+		};
+		50442DD21D05764700C11323 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				50442DD41D05769200C11323 /* BaseViewController.h */,
+				50442DD51D05769200C11323 /* BaseViewController.m */,
+			);
+			name = base;
+			sourceTree = "<group>";
+		};
+		50442DD31D05765100C11323 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				50442DDA1D0578D800C11323 /* common.h */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		50442DE51D06AB9400C11323 /* TCP */ = {
+			isa = PBXGroup;
+			children = (
+				50442DF31D06AC6200C11323 /* TCPServerViewController.h */,
+				50442DF41D06AC6200C11323 /* TCPServerViewController.m */,
+				50442DF61D06AC7300C11323 /* TCPClientViewController.h */,
+				50442DF71D06AC7300C11323 /* TCPClientViewController.m */,
+			);
+			name = TCP;
+			sourceTree = "<group>";
+		};
+		50442DE61D06AB9C00C11323 /* UDP */ = {
+			isa = PBXGroup;
+			children = (
+				50442DED1D06AC3B00C11323 /* UDPServerViewController.h */,
+				50442DEE1D06AC3B00C11323 /* UDPServerViewController.m */,
+				50442DF01D06AC5100C11323 /* UDPClientViewController.h */,
+				50442DF11D06AC5100C11323 /* UDPClientViewController.m */,
+			);
+			name = UDP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +391,9 @@
 			files = (
 				50442D961D05732900C11323 /* LaunchScreen.storyboard in Resources */,
 				50442D931D05732900C11323 /* Assets.xcassets in Resources */,
+				50442DE21D05826800C11323 /* ChatViewController.xib in Resources */,
 				50442D911D05732900C11323 /* Main.storyboard in Resources */,
+				50442DD11D0575E100C11323 /* Documentation.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +418,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50442DF21D06AC5100C11323 /* UDPClientViewController.m in Sources */,
+				50442DCD1D0575E100C11323 /* GCDAsyncSocket.m in Sources */,
+				50442DD61D05769200C11323 /* BaseViewController.m in Sources */,
+				50442DCE1D0575E100C11323 /* GCDAsyncUdpSocket.m in Sources */,
 				50442D8E1D05732900C11323 /* ViewController.m in Sources */,
+				50442DCF1D0575E100C11323 /* AsyncSocket.m in Sources */,
 				50442D8B1D05732900C11323 /* AppDelegate.m in Sources */,
 				50442D881D05732900C11323 /* main.m in Sources */,
+				50442DD01D0575E100C11323 /* AsyncUdpSocket.m in Sources */,
+				50442DF51D06AC6200C11323 /* TCPServerViewController.m in Sources */,
+				50442DE11D05826800C11323 /* ChatViewController.m in Sources */,
+				50442DF81D06AC7300C11323 /* TCPClientViewController.m in Sources */,
+				50442DEF1D06AC3B00C11323 /* UDPServerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +522,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,7 +560,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -413,7 +571,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HysChat",
+				);
+				GCC_PREFIX_HEADER = HysChat/HysChat.pch;
 				INFOPLIST_FILE = HysChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HJason.HysChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +588,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HysChat",
+				);
+				GCC_PREFIX_HEADER = HysChat/HysChat.pch;
 				INFOPLIST_FILE = HysChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HJason.HysChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +666,7 @@
 				50442DB21D05732900C11323 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50442DB31D05732900C11323 /* Build configuration list for PBXNativeTarget "HysChatTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +675,7 @@
 				50442DB51D05732900C11323 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50442DB61D05732900C11323 /* Build configuration list for PBXNativeTarget "HysChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +684,7 @@
 				50442DB81D05732900C11323 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1846,10 +1846,8 @@ static void MyCFSocketCallback(CFSocketRef, CFSocketCallBackType, CFDataRef, con
 	{
 		if(theSocket != [self socketForPacket:theCurrentSend])
 		{
-			// Current send is for the other socket
 			return;
 		}
-		
 		if([self canAcceptBytes:theSocket])
 		{
 			ssize_t result;
