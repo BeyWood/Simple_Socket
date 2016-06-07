@@ -7,10 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController">
             <connections>
-                <outlet property="inputTxt" destination="ogd-Q5-Drd" id="qdn-hp-bwm"/>
-                <outlet property="ipAdress" destination="N3p-0V-6HW" id="uD6-WL-9Jh"/>
-                <outlet property="reciveBtn" destination="wsk-6z-Ckr" id="9ID-Xl-Phv"/>
-                <outlet property="sendBtn" destination="Bco-jz-Rrc" id="huk-Nn-2jY"/>
                 <outlet property="tcpBtn" destination="Pne-4s-zoP" id="KAv-Wd-ebO"/>
                 <outlet property="tcpServerBtn" destination="xSu-0Z-Qvn" id="wda-Xi-IHn"/>
                 <outlet property="udpBtn" destination="8za-9Y-tiO" id="qhx-Eu-hEI"/>
@@ -23,62 +19,42 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bco-jz-Rrc">
-                    <rect key="frame" x="316" y="270" width="46" height="30"/>
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="发送"/>
-                </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="点我" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ogd-Q5-Drd">
-                    <rect key="frame" x="33" y="270" width="259" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N3p-0V-6HW">
-                    <rect key="frame" x="33" y="223" width="259" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsk-6z-Ckr">
-                    <rect key="frame" x="50" y="353" width="65" height="35"/>
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="接收">
-                        <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pne-4s-zoP">
-                    <rect key="frame" x="50" y="537" width="65" height="33.5"/>
+                    <rect key="frame" x="60" y="274.5" width="65" height="33.5"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="TCP">
                         <color key="titleColor" red="0.0" green="0.68089345639999999" blue="0.40111157720000001" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="server" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FC7-W1-jUn">
-                    <rect key="frame" x="50" y="476" width="71" height="21"/>
+                    <rect key="frame" x="60" y="213" width="71" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="client" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXM-ek-6nR">
-                    <rect key="frame" x="250" y="476" width="91" height="21"/>
+                    <rect key="frame" x="260" y="213" width="91" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8w-iE-b3k">
-                    <rect key="frame" x="50" y="609" width="71" height="25"/>
+                    <rect key="frame" x="60" y="341" width="65" height="33.5"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="UDP "/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSu-0Z-Qvn">
-                    <rect key="frame" x="250" y="604" width="56" height="30"/>
+                    <rect key="frame" x="260" y="274.5" width="61" height="33.5"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="TCP"/>
+                    <state key="normal" title="TCP">
+                        <color key="titleColor" red="0.0" green="0.68235294120000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8za-9Y-tiO">
-                    <rect key="frame" x="250" y="537" width="56" height="33.5"/>
+                    <rect key="frame" x="260" y="341" width="61" height="34.5"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="UDP">
-                        <color key="titleColor" red="0.22352941179999999" green="0.67843137249999996" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
             </subviews>

@@ -47,8 +47,8 @@
     [self setRoundBtn:self.reciveBtn];
     [self.reciveBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
     self.ipAdress.placeholder = @"IP地址";
-    [self.view addSubview:connectBtn];
-    [self.view addSubview:disConnect];
+//    [self.view addSubview:connectBtn];
+//    [self.view addSubview:disConnect];
     [self.tcpBtn addTarget:self action:@selector(tcpSocket:) forControlEvents:UIControlEventTouchUpInside];
     [self.udpBtn addTarget:self action:@selector(udpSocket:) forControlEvents:UIControlEventTouchUpInside];
     [self.tcpServerBtn addTarget:self action:@selector(tcpServerBtnAction:) forControlEvents:UIControlEventTouchUpInside];
@@ -56,23 +56,23 @@
 }
 
 -(void)tcpSocket:(UIButton*)sender{
-    TCPClientViewController *nextCtl = [[TCPClientViewController alloc] init];
+    TCPServerViewController *nextCtl = [[TCPServerViewController alloc] init];
     [self.navigationController pushViewController:nextCtl animated:YES];
 }
 
 -(void)udpSocket:(UIButton*)sender{
-    UDPServerViewController *nextCtl = [[UDPServerViewController alloc] init];
+    UDPClientViewController *nextCtl = [[UDPClientViewController alloc] init];
     [self.navigationController pushViewController:nextCtl animated:YES];
 }
 
 -(void)tcpServerBtnAction:(UIButton*)sender{
-    TCPServerViewController *nextCtl = [[TCPServerViewController alloc] init];
+    TCPClientViewController *nextCtl = [[TCPClientViewController alloc] init];
     [self.navigationController pushViewController:nextCtl animated:YES];
 }
 
 -(void)udpServerBtnAction:(UIButton*)sender{
     
-    UDPClientViewController *nextCtl = [[UDPClientViewController alloc] init];
+    UDPServerViewController *nextCtl = [[UDPServerViewController alloc] init];
     [self.navigationController pushViewController:nextCtl animated:YES];
 }
 

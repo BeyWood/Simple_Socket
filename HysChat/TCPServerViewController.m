@@ -8,8 +8,9 @@
 
 #import "TCPServerViewController.h"
 
-@interface TCPServerViewController (){
+@interface TCPServerViewController ()<AsyncSocketDelegate>{
     AsyncSocket *acceptSocket;
+    UITextField *text;
 }
 
 @end
@@ -27,6 +28,18 @@
     [openBtn setTitle:@"开启" forState:UIControlStateNormal];
     [openBtn addTarget:self action:@selector(openUDP:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:openBtn];
+    
+    text = [[UITextField alloc] initWithFrame:CGRectMake(30, 150, 200, 35)];
+    text.placeholder = @"请输入";
+    [self.view addSubview:text];
+    
+    UIButton *sendBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    sendBtn.frame = CGRectMake(30, 200, 60, 40);
+    [sendBtn setTitle:@"发送" forState:UIControlStateNormal];
+    [sendBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [sendBtn setBackgroundColor:[UIColor blackColor]];
+    [sendBtn addTarget:self action:@selector(sendMessage:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:sendBtn];
     // Do any additional setup after loading the view.
 }
 
@@ -39,6 +52,10 @@
     }else {
         NSLog(@"accept failed.");
     }
+}
+
+- (void)sendMessage:(UIButton*)sender {
+    [acceptSocket writeData:[text.text dataUsingEncoding:NSUTF8StringEncoding] withTimeout:-1 tag:1];
 }
 
 - (void)onSocket:(AsyncSocket *)sock didAcceptNewSocket:(AsyncSocket *)newSocket{
@@ -84,7 +101,6 @@
 //    acceptSocket;
     acceptSocket=nil;
 }
-
 
 
 
