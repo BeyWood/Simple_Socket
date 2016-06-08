@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"UDP SERVER";
+    self.title = @"UDP Server";
     [self.view setBackgroundColor:RGBACOLOR(243, 243, 243, 243)];
     UIButton *openBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     openBtn.frame = CGRectMake(30, 100, 60, 35);
@@ -62,7 +62,6 @@
         NSLog(@"error: %@",error);
     }
     [_socket receiveWithTimeout:-1 tag:1];
-    NSLog(@"start udp server");
 }
 
 - (BOOL)onUdpSocket:(AsyncUdpSocket *)sock

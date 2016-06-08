@@ -13,6 +13,7 @@
     BOOL isRunning;
     UITextField *text;
     NSMutableArray *connectSockets;
+    UILabel *receiveLab;
 }
 
 @end
@@ -21,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"TCP SERVER";
+    self.title = @"TCP Server";
     connectSockets = [[NSMutableArray alloc] initWithCapacity:30];
     isRunning = NO;
     [self.view setBackgroundColor:RGBACOLOR(243, 243, 243, 1)];
@@ -31,11 +32,11 @@
     [openBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
     [openBtn setTitle:@"开启" forState:UIControlStateNormal];
     [openBtn addTarget:self action:@selector(openUDP:) forControlEvents:UIControlEventTouchUpInside];
+    [openBtn setTitle:@"关闭" forState:UIControlStateSelected];
     [self.view addSubview:openBtn];
     text = [[UITextField alloc] initWithFrame:CGRectMake(30, 150, 200, 35)];
     text.placeholder = @"请输入";
     [self.view addSubview:text];
-    
     UIButton *sendBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     sendBtn.frame = CGRectMake(30, 200, 60, 40);
     [sendBtn setTitle:@"发送" forState:UIControlStateNormal];
@@ -45,13 +46,14 @@
     [self.view addSubview:sendBtn];
     [self setRoundBtn:sendBtn];
     [self setRoundBtn:openBtn];
-    listener =[[AsyncSocket alloc] initWithDelegate:self];
     
-    // Do any additional setup after loading the view.
+    receiveLab = [[UILabel alloc] initWithFrame:CGRectMake(30, 250, 200, 35)];
+    receiveLab.textColor = [UIColor blackColor];
+    [self.view addSubview:receiveLab];
+    listener =[[AsyncSocket alloc] initWithDelegate:self];
 }
 
 - (void)openUDP:(UIButton*)sender{
-    
     
     NSError *err = nil;
     if (!isRunning) {
@@ -70,11 +72,12 @@
         }
         isRunning = FALSE;
     }
-    
 }
 
 - (void)sendMessage:(UIButton*)sender {
-    [listener writeData:[text.text dataUsingEncoding:NSUTF8StringEncoding] withTimeout:-1 tag:1];
+    NSString *returnMessage = text.text;
+    NSData *data=[returnMessage dataUsingEncoding:NSUTF8StringEncoding];
+    [listener writeData:data withTimeout:-1 tag:1];
 }
 
 - (void)onSocket:(AsyncSocket *)sock didAcceptNewSocket:(AsyncSocket *)newSocket{
@@ -82,36 +85,32 @@
 }
 
 - (NSRunLoop *)onSocket:(AsyncSocket *)sock wantsRunLoopForNewSocket:(AsyncSocket *)newSocket{
-    NSLog(@"wants runloop for new socket.");
     return [NSRunLoop currentRunLoop];
 }
 
 - (BOOL)onSocketWillConnect:(AsyncSocket *)sock{
-    NSLog(@"will connect");
     return YES;
 }
 
 - (void)onSocket:(AsyncSocket *)sock didConnectToHost:(NSString *)host port:(UInt16)port{
-    NSLog(@"did connect to host");
+    
+    listener = sock;
     [listener readDataWithTimeout:-1 tag:1];
-    NSString *returnMessage=@"Welcome To Socket Test Server!";
+    NSString *returnMessage=@"小明在家";
     //将NSString转换成为NSData类型
     NSData *data=[returnMessage dataUsingEncoding:NSUTF8StringEncoding];
     //向当前连接服务器的客户端发送连接成功信息
-    [sock writeData:data withTimeout:-1 tag:0];
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"已连接" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-    [alertView show];
+    [sock writeData:data withTimeout:-1 tag:1];
+    receiveLab.text = [NSString stringWithFormat:@"%@%i",host,(UInt32)port];
 }
 
 - (void)onSocket:(AsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag{
-    NSLog(@"did read data");
     NSString* message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    NSLog(@"message is: n%@",message);
-    [listener writeData:data withTimeout:-1 tag:1];
+    receiveLab.text = message;
+//    [listener writeData:data withTimeout:-1 tag:1];
 }
 
 - (void)onSocket:(AsyncSocket *)sock didWriteDataWithTag:(long)tag{
-    NSLog(@"message did write");
     [listener readDataWithTimeout:-1 tag:1];
 }
 
@@ -120,12 +119,10 @@
 }
 
 - (void)onSocketDidDisconnect:(AsyncSocket *)sock{
-    NSLog(@"socket did disconnect");
-    [connectSockets removeObject:sock];
-//    listener;
+    if ([connectSockets containsObject:sock]) {
+        [connectSockets removeObject:sock];
+    }
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
