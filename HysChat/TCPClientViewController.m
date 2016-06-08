@@ -23,7 +23,7 @@
     self.title = @"TCP CLIENT";
     [self.view setBackgroundColor:RGBACOLOR(243, 243, 243, 1)];
     UIButton *openBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    openBtn.frame = CGRectMake(50, 100, 60, 35);
+    openBtn.frame = CGRectMake(30, 100, 60, 35);
     [openBtn setBackgroundColor:[UIColor blackColor]];
     [openBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
     [openBtn setTitle:@"连接" forState:UIControlStateNormal];
@@ -41,6 +41,8 @@
     [sendBtn setBackgroundColor:[UIColor blackColor]];
     [sendBtn addTarget:self action:@selector(sendMessage:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:sendBtn];
+    [self setRoundBtn:sendBtn];
+    [self setRoundBtn:openBtn];
     // Do any additional setup after loading the view.
 }
 
@@ -49,9 +51,10 @@
     socket=[[AsyncSocket alloc] initWithDelegate:self];
     NSError *error;
     [socket connectToHost:@"10.8.206.103" onPort:4322 error:&error];
-//    [socket readDataToLength:50 withTimeout:5 tag:1];
+    [socket readDataToLength:50 withTimeout:10000 tag:1];
 //    [socket readDataToLength:50 withTimeout:5 tag:2];
-//    [socket writeData:[@"GET / HTTP/1.1nn" dataUsingEncoding:NSUTF8StringEncoding] withTimeout:3 tag:1];
+    [socket writeData:[@"GET / HTTP/1.1nn" dataUsingEncoding:NSUTF8StringEncoding] withTimeout:-1 tag:1];
+    socket.runLoopModes = @[NSRunLoopCommonModes];
     
 }
 

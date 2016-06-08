@@ -24,7 +24,7 @@
     self.title = @"UDP SERVER";
     [self.view setBackgroundColor:RGBACOLOR(243, 243, 243, 243)];
     UIButton *openBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    openBtn.frame = CGRectMake(50, 100, 60, 35);
+    openBtn.frame = CGRectMake(30, 100, 60, 35);
     [openBtn setBackgroundColor:[UIColor blackColor]];
     [openBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
     [openBtn setTitle:@"连接" forState:UIControlStateNormal];
